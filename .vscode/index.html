@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title> مدیریت اموزشگاه </title>
+    </head>
+
+    <body>
+
+      <header>
+        <nav class="nav-ul">
+          <div class="main">
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <img src="images/testimonial-author-01.jpg" class="user-pick" alt="" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+                <div class="user-info">
+                  <img src="images//testimonial-author-01.jpg" class="user-pick" alt="" onclick="toggleMenu()">
+                  <h4> ملیکا محمدی </h4>
+                </div>
+                <hr>
+                <a href="#" class="sub-menu-link">
+                  <img src="images/user.png" alt="">
+                  <p> ناحیه کاربری </p>
+                  <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                  <img src="images/wallet.png" alt="">
+                  <p> کیف پول </p>
+                  <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                  <img src="images/logout.png" alt="">
+                  <p> خروج از اکانت </p>
+                  <span>></span>
+                </a>            
+              </div>
+            </div>
+          </div>
+          <ul>
+            <li> <a href="" class="home-active"> خانه </a> </li>
+            <li> <a href=""> دوره ها </a> </li>
+            <li> <a href=""> خدمات </a> </li>
+            <li> <a href=""> ازمون </a> </li>
+            <li> <a href="#section-1"> اموزشگا ها </a> </li>
+          </ul>
+          <a href="" class="logo"><i class="ri-home-5-line"></i><span> LOGO </span></a>
+        </nav>
+
+        <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval="-1">
+
+          <div class="carousel-indicators"> 
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 2"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <div class="overlay-image" style="background-image: url(images/welcome.jpg);"></div>
+              <div class="container">
+                <!-- <h1> خوش امدید </h1>
+                <p class="p-text">با سلام و احترام!
+                  خوش آمدید به سایت برنامه نویسی ما! اینجا جایی است که شما می‌توانید از جذابیت و هیجان برنامه نویسی لذت ببرید. با ما همراه شوید و دنیایی از امکانات و آموزش‌های مفید در انتظارتان است. همچنین، شما می‌توانید با جامعه‌ی فعال و دوستانه ما در ارتباط باشید و در این سفر مشارکت کنید.       
+                  بیایید همین الان شروع کنیم!</p>
+                  <a href="" class="btn btn-primary btn-lg change-btn"> ادامه </a> -->
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="overlay-image" style="background-image: url(images/bg.jpg);"></div>
+              <div class="container">
+                <!-- <h1> دوره ی پاتون </h1>
+                <p class="p-text">«زبان برنامه نویسی پایتون» (Python Programming Language)، زبانی با یادگیری آسان محسوب می‌شود و از همین رو بسیاری از برنامه‌نویس‌های تازه‌کار آن را به عنوان اولین زبان برنامه‌نویسی خود برمی‌گزینند، زیرا پایتون به عنوان یک «زبان همه‌منظوره» (General-Purpose Language) ساخته و توسعه داده شده و محدود به توسعه نوع خاصی از نرم‌افزارها نیست. به بیان دیگر، می‌توان از آن برای هر کاری، از «تحلیل داده» (Data Analysis) گرفته تا ساخت بازی‌های کامپیوتری استفاده کرد. بنابراین، یادگیری پایتون بسیار حائز اهمیت است</p>
+                  <a href="" class="btn btn-primary btn-lg change-btn"> ادامه </a> -->
+              </div>
+            </div>
+            
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="overlay-image" style="background-image: url(images/java.jpg);"></div>
+              <div class="container">
+                <!-- <h1> جاوا </h1>
+                <p class="p-text">یک زبان برنامه‌نویسیِ شیءگرا است که نخستین بار توسط جیمز گاسلینگ در شرکت سان‌مایکروسیستمز ایجاد گردید و در سال ۱۹۹۱ به عنوان بخشی از سکوی جاوا منتشر شد. زبان جاوا شبیه به سی‌پلاس‌پلاس است؛ اما مدل شیءگرایی آسان‌تری دارد و از قابلیت‌های سطح پایین کمتری پشتیبانی می‌کند.</p>
+                  <a href="" class="btn btn-primary btn-lg change-btn"> ادامه </a> -->
+              </div>
+            </div>
+
+          </div> 
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+        </div>
+      <header>
+
+
+      <main class="mt-5">
+
+        <div class="container-fluid">
+
+          <!-- best feature -->
+          <section id="best-features" class="text-center">
+
+            <!-- Heading -->
+            <h2 class="mb-4 font-wight-bold" id="section-1"> اموزشگاه ها </h2>
+
+            <!-- Grid row -->
+            <div class="row d-flex justify-content-center mb-4">
+              <!-- Grid row -->
+              <div class="col-md-8">
+
+                <!-- Description -->
+                <p class="font-wight-bold grey-text institution-description">محلی برای یادگیری و رشد با اساتید مجرب و روش‌های آموزشی  ما به شما کمک می‌کنیم تا <br>مهارت‌های جدید را بهبود داده و به هدف‌هایتان نزدیک شوید</p>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-md-4">
+                <h4 class="mb-4 font-wight-bold"> اموزشگاه کلیک </h4>
+                <p class="grey-text p-description"> یک اموزشگاه برتر آنلاین است که به شما امکان می‌دهد مهارت‌های کامپیوتری را به دست آورید. با توجه به اینکه امروزه دانش رایانه و فناوری اطلاعات برای هر فردی ضروری است، ما اینجا هستیم تا شما را در این مسیر همراهی کنیم. </p>
+                <a class="btn btn-primary mt-3 mb-4" href="#"> اطلاعات بیشتر </a>
+              </div>
+
+              <div class="col-md-4">
+                <h4 class="mb-4 font-wight-bold"> اموزشگاه فنی حرفه ای </h4>
+                <p class="grey-text p-description"> اموزشگاه فنی حرفه‌ای  به شما این امکان را می‌دهد مهارت‌های فنی به دست آورید. با توجه به نیاز روزافزون صنایع و حوزه‌های فنی، ما در اینجا هستیم تا شما را در این مسیر همراهی کنیم.</p>
+                <a class="btn btn-primary mt-3 mb-4" href="#"> اطلاعات بیشتر </a>
+              </div>
+
+              <div class="col-md-4">
+                <h4 class="mb-4 font-wight-bold"> اموزشگاه زبان دیاکو </h4>
+                <p class="grey-text p-description">دیاکو اموزشگاهی برتر برای آموزش زبان است که به شما امکان می‌دهد مهارت‌های زبانی خود را بهبود بخشید و به روان صحبت کردن در زبان مورد نظرتان برسید. با توجه به اهمیت زبان در جوامع جهانی، ما در دیاکو به شما ارائه می‌دهیم تا بتوانید با اعتماد به نفس در تعاملات بین‌المللی شرکت کنید.</p>
+                <a class="btn btn-primary mt-3 mb-4" href="#"> اطلاعات بیشتر </a>
+              </div>
+            </div>
+      
+          <section>
+
+            <div class="container-fluid courses">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <h2 class="mb-2 font-wight-bold"> دوره های پرفروش </h2>
+                </div>
+                <div class="col-md-4 gy-5">
+                  <div class="card shadow">
+                    <div class="inner">
+                      <img src="images/html-css.jpg" class="card-img-top img-fluid" alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title"> دوره HTML CSS </h5>
+                      <p class="card-text">دوره HTML و CSS به شما کمک می‌کند تا مبانی و اصول طراحی وب را فرا بگیرید و توانایی ساخت صفحات وب زیبا و قابل اعتماد را به دست آورید.
+                      </p>
+                      <a href="#" class="btn btn-success w-50"> ثبت نام دوره </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 gy-5">
+                  <div class="card shadow">
+                    <div class="inner">
+                      <img src="images/python-logo.png" class="card-img-top img-fluid" alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title"> دوره پایتون </h5>
+                      <p class="card-text">پایتون، یک زبان برنامه‌نویسی قدرتمند و چندمنظوره است که برای توسعه نرم‌افزارها، وب، علوم داده و هوش مصنوعی استفاده می‌شود.
+                      </p>
+                      <a href="#" class="btn btn-success w-50"> ثبت نام دوره </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 gy-5">
+                  <div class="card shadow">
+                    <div class="inner">
+                      <img src="images/jason.jpg" class="card-img-top img-fluid" alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title"> دوره دیتابیس </h5>
+                      <p class="card-text">دیتابیس، سیستمی است برای ذخیره و مدیریت داده‌ها به صورت منظم و قابل دسترس که در بخش‌های مختلفی از جمله وب، نرم‌افزارها و سیستم‌های تجاری استفاده می‌شود.</p>
+                      <a href="#" class="btn btn-success w-50"> ثبت نام دوره </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <!-- <hr class="my-5">
+
+          best gallrey
+          <section id="gallrey">
+
+          </section>
+
+          <hr class="my-5"> -->
+
+          <!-- best contact
+          <section id="contact">
+
+          </section>
+
+          <hr class="my-5"> -->
+
+        </div>
+
+      </main>
+
+      <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container-fluid text-center text-md-left">
+          <div class="row text-center text-md-leftt">
+            <div class="col-md-3 mx-auto mt-3">
+              <h1 class="mb-4 font-wight-bold text-warning"> توضیحات </h1>
+              <p>با سلام! سایت آموزشگاهی را ایجاد کرده ایم که به شما این امکان را می‌دهد تا مهارت‌های جدیدی را به دست آورید. این سایت با هدف ارائه اموزش‌های متنوع و کاربردی در زمینه‌های مختلف تاسیس شده است.
+              </p>
+            </div>
+            <div class="col-md-2 mx-auto mt-3 ">
+              <h5 class="mb-4 font-wight-bold text-warning"> درباره </h5>
+              <p>
+                <a href="#" class="text-white"> اموزشگاه ها </a>
+              </p>
+              <p>
+                <a href="#" class="text-white"> استاد ها </a>
+              </p>
+              <p>
+                <a href="#" class="text-white"> قوانین و مقررات </a>
+              </p>
+              <p>
+                <a href="#" class="text-white"> خدمات </a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 mx-auto  mt-3">
+              <h5 class="mb-4 font-wight-bold text-warning"> ساعت کاری </h5>
+              <p>
+                <a class="text-white">تایم صبح از 7:00 تا 12:00 </a>
+              </p>
+              <p>
+                <a class="text-white"> تایم شب از 7:00 تا 10:00 </a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 mx-auto mt-3">
+              <h5 class="mb-4 font-wight-bold text-warning"> راه های ارتباطی </h5>
+              <p>
+                <a class="text-white"> ایمیل: </a>
+              </p>
+              <p>
+                <a class="text-white"> شماره تماس: </a>
+              </p>
+              <p>
+                <a href="#" class="text-white mb-2"> تلگرام: <i class="fa fa-telegram ms-1" style="font-size: 20px;"></i> </a>
+              </p>
+              <p>
+                <a href="#" class="text-white mb-2"> اینستاگرام: <i class="fa fa-instagram ms-1" style="font-size: 20px;"></i> </a>
+              </p>
+            </div>
+          </div>
+          <hr>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 col-lg-8">
+              <p>
+                تمامی حقوق این سایت شامل تیم ... میباشد
+                <a href=""></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!--* Js Link  -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>     
+      <script src="js/script.js"></script>
+    </body>
+</html>
