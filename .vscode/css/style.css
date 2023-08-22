@@ -273,7 +273,7 @@ nav > ul > li > a.home-active {
         top: 100%;
         right: -100%;
         width: 200px;
-        height: 50vh;
+        /* height: 50vh; */
         background-color: green;
         display: flex;
         flex-direction: column;
